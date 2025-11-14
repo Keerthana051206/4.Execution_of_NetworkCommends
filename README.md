@@ -5,10 +5,15 @@
 Students have to understand basic networking commands such as:
 
 tcpdump
+
 netstat
+
 ifconfig
+
 nslookup
+
 traceroute
+
 Additionally, capture ping and traceroute PDUs using a network protocol analyzer.
 
 This includes all commands related to network configuration, such as:
@@ -23,8 +28,12 @@ Privileged mode commands of a router
 Router processes & statistics
 IP commands
 Other IP commands (e.g., show ip route)
+
+
 Programe:
+```
 client.py
+
 import socket
 
 s = socket.socket()
@@ -38,9 +47,11 @@ while True:
     print(s.recv(4096).decode('utf-8'))
 
 s.close()
-
+```
+```
 
 server.py
+
 import socket
 from pythonping import ping
 
@@ -63,6 +74,7 @@ while True:
         c.send(f"Ping failed: {e}".encode('utf-8'))
 
 c.close()
+```
 ## Output
 <img width="1268" height="381" alt="image" src="https://github.com/user-attachments/assets/ecb65335-2574-40a6-a1fd-b2706ea76e07" />
 
